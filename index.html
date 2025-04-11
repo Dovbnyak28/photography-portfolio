@@ -17,7 +17,7 @@
     </header>
 
     <section class="hero">
-        <img src="https://via.placeholder.com/1200x400.png?text=Головне+Фото" alt="Hero Image">
+        <img src="https://via.placeholder.com/1200x400.png?text=Hero+Image" alt="Hero Image">
     </section>
 
     <section class="about">
@@ -71,7 +71,7 @@
 
         function setLanguage(lang) {
             document.getElementById('about-title').textContent = translations[lang].aboutTitle;
-            document.getElementById('about-text').textContent = translations[lang].aboutText;
+            document.getElementById('about-text').innerHTML = translations[lang].aboutText;
             document.getElementById('gallery-title').textContent = translations[lang].galleryTitle;
             document.getElementById('contact-title').textContent = translations[lang].contactTitle;
             document.getElementById('contact-text').innerHTML = translations[lang].contactText;
